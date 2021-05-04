@@ -1,0 +1,59 @@
+.advantages {
+  background-image: url("../../img/flag.png");
+  background-color: rgba(#1b8ff7, 0.6);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__heading {
+    font-size: 3.6rem;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 700;
+    padding-top: 13.7rem;
+    margin-bottom: 11.2rem;
+  }
+
+  &__grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 17.2rem;
+  }
+
+  &__card {
+    width: 35rem;
+    height: 27rem;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9)
+    );
+    border: 1px dashed #323232;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3.6rem;
+    margin-bottom: 5.2rem;
+    
+
+    &-text {
+       transform: translateX(-6rem);
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        max-width: 30.5rem;
+    }
+  }
+
+  &__img {
+    align-self: start;
+    width: 12rem;
+    height: 12rem;
+    transform: translateY(-50px) translateX(-30px);
+  }
+}
+

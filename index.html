@@ -43,20 +43,164 @@
                 alt="pin"
                 class="header__hero-card--image"
               />
-              <p>Мальта - это общепризнанная респектабельная площадка для ведения международного бизнеса</p>
+              <p>
+                Мальта - это общепризнанная респектабельная площадка для ведения
+                международного бизнеса
+              </p>
             </div>
             <div class="header__hero-card">
-                <img
-                  src="img/header-2.png"
-                  alt="pin"
-                  class="header__hero-card--image"
-                />
-                <p>Отсутствуют правила валютного контроля, правила о контролируемых иностранных компаниях, а также правила трансфертного ценообразования</p>
-              </div>
+              <img
+                src="img/header-2.png"
+                alt="pin"
+                class="header__hero-card--image"
+              />
+              <p>
+                Отсутствуют правила валютного контроля, правила о контролируемых
+                иностранных компаниях, а также правила трансфертного
+                ценообразования
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </header>
-
+    <section class="answer">
+      <div class="container">
+        <h3 class="answer__heading red__heading">Ответьте на несколько вопросов</h3>
+        <div class="answer__wrap">
+          <div class="quiz">
+            <h4 class="quiz__heading">
+              И мы рассчитаем насколько данная юрисдикция подходит именно Вам
+            </h4>
+            <div id="hud">
+              <div class="hud-item">
+                <div id="progressBar">
+                  <div id="progressBarFull"></div>
+                </div>
+                <div class="hud__quest">
+                  <p id="progressText" class="hud-prefix">Вопрос</p>
+                  <h5 id="question"></h5>
+                </div>
+              </div>
+              <div class="choice__wrap">
+                <div class="choice-container">
+                  <p class="choice-text" data-number="1"></p>
+                </div>
+                <div class="choice-container">
+                  <p class="choice-text" data-number="2"></p>
+                </div>
+                <div class="choice-container">
+                  <p class="choice-text" data-number="3"></p>
+                </div>
+                <div class="choice-container">
+                  <p class="choice-text" data-number="4"></p>
+                </div>
+              </div>
+              <div class="hud__buttons">
+                <button class="hud-btn" id="skip" onclick="getNewQuestion()">
+                  Пропустить
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="answer__card">
+            <img src="img/manager.png" alt="manager" class="answer__img" />
+            <p class="answer__card-name">Денис</p>
+            <p class="answer__card-position">Менеджер</p>
+            <p class="answer__card-text">Нужна консультация?</p>
+            <p class="answer__card-text">Отвечу на любые вопросы</p>
+            <a class="answer__card-btn" href="tel:+74950000000"
+              >8(495)000-00-00</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="advantages">
+      <div class="container">
+        <h3 class="advantages__heading">Преимущества Мальты</h3>
+        <div class="advantages__grid">
+          <div class="advantages__card">
+            <img class="advantages__img" src="img/adv-1.png" alt="advantage" />
+            <p class="advantages__card-text">
+              Мальта является общепризнанной респектабельной площадкой для
+              ведения международного бизнеса
+            </p>
+          </div>
+          <div class="advantages__card">
+            <img class="advantages__img" src="img/adv-2.png" alt="advantage" />
+            <p class="advantages__card-text">
+              Не являясь офшорной юрисдикцией, Мальта не фигурирует в «черных
+              списках» государств или международных организаций как страна с
+              нулевым или низким налогообложением.
+            </p>
+          </div>
+          <div class="advantages__card">
+            <img class="advantages__img" src="img/adv-3.svg" alt="advantage" />
+            <p class="advantages__card-text">
+              На Мальте отсутствуют правила валютного контроля, правила о
+              контролируемых иностранных компаниях, а также правила
+              трансфертного ценообразования.
+            </p>
+          </div>
+          <div class="advantages__card">
+            <img class="advantages__img" src="img/adv-4.png" alt="advantage" />
+            <p class="advantages__card-text">
+              Стабильная банковская система и гибкое налоговое законодательство.
+            </p>
+          </div>
+          <div class="advantages__card">
+            <img class="advantages__img" src="img/adv-5.png" alt="advantage" />
+            <p class="advantages__card-text">
+              Мальта является первым государством, законодательно
+              урегулировавшим гражданский оборот криптовалют.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="fields">
+      <div class="container">
+        <h3 class="fields__heading red__heading">Мальта отлично подходит для:</h3>
+        <div class="fields__grid">
+          <div class="fields__card fields__card-1">
+            <img src="img/fit-1.png" alt="яхта" class="fields__card-img" />
+            <p class="fields__card-text">Судоходство и яхтинг</p>
+          </div>
+          <div class="fields__card fields__card-2">
+            <img src="img/fit-2.png" alt="международная торговля" class="fields__card-img" />
+            <p class="fields__card-text">Международная торговля</p>
+          </div>
+          <div class="fields__card fields__card-3">
+            <img src="img/fit-3.png" alt="инвестиции" class="fields__card-img" />
+            <p class="fields__card-text">Международные инвестиции</p>
+          </div>
+          <div class="fields__card fields__card-4">
+            <img src="img/fit-4.png" alt="электронная торговля" class="fields__card-img" />
+            <p class="fields__card-text">Электронная торговля</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact">
+      <div class="container">
+        <h4 class="contact__heading">
+          Не знаете насколько данная юрисдикция подходит для Вашего бизнеса?
+        </h4>
+        <form action="" class="contact__form">
+          <p class="contact__form-text">
+            Оставьте свои контакты и наш специалист свяжется с Вами и проконсультирует в ближайшее время
+          </p>
+          <label for="name">Введите ваше имя</label>
+          <input type="text" id="name" name="name" placeholder="Ваше Имя">
+          <label for="tel">Введите ваш номер телефона</label>
+          <input type="text" id="tel" name="tel" placeholder="+7(___)___-__-__">
+          <input type="checkbox" id="checkbox">
+          <label for="checkbox">Согласие с условиями политики конфиденциальности</label>
+          <button type="submit">Бесплатная консультация</button>
+        </form>
+      </div>
+    </section>
+    <script src="index.js"></script>
   </body>
 </html>
