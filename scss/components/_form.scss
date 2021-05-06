@@ -1,0 +1,97 @@
+.form {
+  position: relative;
+  border: 2px dashed #f6fffa;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  label {
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 1.9rem;
+    align-self: flex-start;
+    
+  }
+  input[type="text"] {
+    
+    padding: 2rem 2rem;
+    margin-bottom: 1.9rem;
+    border-radius: 2px;
+    border: 3px solid transparent;
+    transition: all 0.5s;
+    &:focus:invalid {
+      border-bottom: 3px solid #ff2200;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba(#000000, 0.1);
+      border-bottom: 3px solid #22ff00;
+    }
+  }
+  
+  &-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+
+  &-checkbox + label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    font-size: 1.3rem;
+    font-weight: 300;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 2.3rem;
+      height: 2.3rem;
+      flex-shrink: 0;
+      flex-grow: 0;
+      border: 1px solid #fff;
+      border-radius: 5px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 80% 80%;
+      cursor: pointer;
+      margin-right: 0.5rem;
+    }
+  }
+
+  &-checkbox:checked + label {
+    &:before {
+      background-image: url("../../img/checkbox.svg");
+    }
+  }
+
+  &-checkbox:focus + label::before {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+
+  &-checkbox:focus:not(:checked) + label::before {
+    border-color: #80bdff;
+  }
+
+  &-btn {
+    
+    background: linear-gradient(180deg, #f4004a 0%, #fc316d 100%);
+    border: 1px solid #e85b85;
+    box-shadow: 0px 5px 0px #ba0e42, 0px 4px 18px rgba(0, 0, 0, 0.25),
+      inset 0px 2px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 59px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+
+    &:hover {
+      filter: brightness(1.1);
+    }
+
+    &:active {
+      transform: translateY(2px);
+    }
+  }
+}

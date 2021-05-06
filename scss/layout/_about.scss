@@ -1,0 +1,30 @@
+.about {
+
+    &__heading {
+        padding-top: 12.9rem;
+        margin-bottom: 4.5rem;
+    }
+
+    &__content {
+        display: flex;
+        padding-left: 10rem;
+        padding-bottom: 15.3rem;
+        &-img {
+            margin-right: 4rem;
+        }
+
+        &-text {
+            padding-top: 2rem;
+            font-size: 1.7rem;
+            font-weight: 500;
+            max-width: 55.7rem;
+            p {
+                margin-bottom: 3rem;
+            }
+            ul li{
+                list-style: disc;
+                margin-bottom: 3rem;
+            }
+        }
+    }
+}

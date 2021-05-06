@@ -1,63 +1,46 @@
 .contact {
-    background-image: url('../../img/ta-pinu-3981172\ 1.png');
-    background-color: #1D9FF4;
-    background-size: cover;
-    height: 100vh;
-    &__heading {
-        color: #ffffff;
-        font-size: 3.6rem;
-        text-align: center;
-        padding-top: 5.7rem;
-        max-width: 87rem;
-        margin: auto;
-        margin-bottom: 5.7rem;
+  background-image: url("../../img/ta-pinu-3981172\ 1.png");
+  background-color: #1d9ff4;
+  background-size: cover;
+  height: 100vh;
+  &__heading {
+    color: #ffffff;
+    font-size: 3.6rem;
+    text-align: center;
+    padding-top: 5.7rem;
+    max-width: 87rem;
+    margin: auto;
+    margin-bottom: 5.7rem;
+  }
+
+  &__form {
+    background-color: #1d9ff4;
+    flex-direction: column;
+    width: 56rem;
+    height: 63rem;
+
+    &-text {
+      color: #ffffff;
+      font-size: 2.4rem;
+      padding-top: 7.7rem;
+      max-width: 43.8rem;
+      text-align: center;
+      font-weight: 700;
+      margin-bottom: 4.1rem;
+    }
+    label {
+      transform: translateX(7.6rem);
+    }
+    input[type="text"] {
+      width: 40.4rem;
+      height: 5.6rem;
     }
 
-    &__form {
-        position: relative;
-        margin: 0;
-        background-color: #1D9FF4;
-        border: 2px dashed #F6FFFa;
-        border-radius: 5px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 56rem;
-        height: 63rem;
-        margin: auto;
-       
-        &-text {
-            color: #ffffff;
-            font-size: 2.4rem;
-            padding-top: 7.7rem;
-            max-width: 43.8rem;
-            text-align: center;
-            font-weight: 700;
-            margin-bottom: 4.1rem;
-        }
-
-        label {
-            color: #ffffff;
-            font-size: 1.4rem;
-            font-weight: 700;
-            margin-bottom: 1.9rem;
-            align-self: flex-start;
-            transform: translateX(7.6rem);
-        }
-
-        input[type="text"] {
-            width: 40.4rem;
-            height: 5.6rem;
-            padding: 2rem 2rem;
-            margin-bottom: 1.9rem;
-            border-radius: 5px;
-            border: 1px solid transparent;
-        }
-
-        input[type="text"]:focus {
-            outline: none;
-            border-bottom: 1px solid red;
-        }
-
+    &-btn {
+      width: 40.6rem;
+      height: 6rem;
+      padding: 2.2rem 7.2rem 2.2rem 9.4rem;
     }
+  }
+  
 }
