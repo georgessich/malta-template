@@ -1,5 +1,5 @@
 .header {
-    background-image: url('../../img/hero.jpg');
+    background-image: url('https://georgessich.github.io/malta-template/img/hero.jpg');
     background-color: #04a8fa;
     background-blend-mode: overlay ;
     background-position: top;
@@ -72,7 +72,7 @@
             &::before {
                 content:"";
                 display: inline-block;
-                background-image: url('../../img/test.svg');
+                background-image: url('https://georgessich.github.io/malta-template/img/test.svg');
                 background-size: cover;
                 position: absolute;
                 width: 10rem;
@@ -83,7 +83,7 @@
             &::after {
                 content: "";
                 display: inline-block;
-                background-image: url('../../img/right-drawn-arrow\ 1.png');
+                background-image: url('https://georgessich.github.io/malta-template/img/right-drawn-arrow\ 1.png');
                 background-size: cover;
                 position: absolute;
                 width: 7.3rem;
