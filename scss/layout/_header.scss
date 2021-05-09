@@ -6,17 +6,36 @@
     background-size: cover;
     height: 100vh;
     color: #ffffff;
+
+    &__logo {
+        @include respond(lg-phone-port) {
+            width: 40%;
+        }
+        @include respond(sm-phone) {
+            width: 100%;
+         }
+    }
     &__top {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding-top: 2rem;
+        @include respond(lg-phone-port) {
+            justify-content: space-around;
+        }
+        @include respond(sm-phone) {
+            flex-direction: column;
+         }
 
-        &-contacts p {
+        &-forms p {
             font-size: 2rem;
             font-weight: 500;
             padding-left: 2rem;
             margin-bottom: 1rem;
+            @include respond(sm-phone) {
+              padding-top: 4rem;
+                font-size: 6rem;
+             }
         }
         
         &-btn {
@@ -37,23 +56,48 @@
             &:active {
                 transform: translateY(2px);
             }
+            @include respond(sm-phone) {
+                font-size: 6rem;
+             }
         }
 
     }
 
     &__hero {
         padding-top: 16.7rem;
+        @include respond(tab-port) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
         &-heading {
             font-size: 4.8rem;
             font-weight: 700;
             margin-bottom: 1rem;
+            @include respond(tab-port) {
+                text-align: center;
+            }
+            @include respond (md-phone) {
+                font-size: 8.8rem;
+            }
+            
+            @include respond(sm-phone) {
+                font-size: 6rem;
+            }
         }
 
         p {
             font-size: 2.2rem;
             max-width: 70rem;
             margin-bottom: 4rem;
+            @include respond (md-phone) {
+                font-size: 4.2rem;
+            }   
+            
+            @include respond(sm-phone) {
+               font-size: 4rem;
+            }
         }
 
         &-btn {
@@ -69,6 +113,14 @@
             position: relative;
             transition: all .2s;
             margin-bottom: 2rem;
+            @include respond (md-phone) {
+                font-size: 7rem;
+            }
+            
+            @include respond(sm-phone) {
+                margin: 8rem auto;
+                font-size: 6rem;
+             }
             &::before {
                 content:"";
                 display: inline-block;
@@ -78,6 +130,9 @@
                 width: 10rem;
                 height: 10rem;
                 transform: translateX(-12rem) translateY(-6rem);
+                @include respond(lg-phone-port) {
+                    display: none;
+                 }
             }
 
             &::after {
@@ -90,6 +145,9 @@
                 height: 7.3rem;
                 transform: translateX(11rem);
                 cursor: default;
+                @include respond(lg-phone-port) {
+                    display: none;
+                 }
             }
 
             &:hover {
@@ -104,10 +162,14 @@
         }
         &-cards {
             display: flex;
+            
         }
         &-card {
             display: flex;
             margin-right: 2rem;
+            @include respond(lg-phone-port) {
+                display: none;
+            }
             img {
                 height: 50%;
                 margin-right: 1rem;

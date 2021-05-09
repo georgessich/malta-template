@@ -11,7 +11,14 @@
     font-weight: 700;
     margin-bottom: 1.9rem;
     align-self: flex-start;
-    
+    @include respond(tab-port) {
+      font-size: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+    @include respond(sm-phone) {
+      font-size: 3.4rem;
+      margin-bottom: 2.5rem;
+    }
   }
   input[type="text"] {
     
@@ -43,6 +50,12 @@
     user-select: none;
     font-size: 1.3rem;
     font-weight: 300;
+    @include respond(tab-port) {
+      font-size: 2.5rem;
+    }
+    @include respond(sm-phone) {
+      font-size: 3.4rem;
+    }
     &::before {
       content: "";
       display: inline-block;
@@ -57,6 +70,16 @@
       background-size: 80% 80%;
       cursor: pointer;
       margin-right: 0.5rem;
+      @include respond(tab-port) {
+        width: 4.2rem;
+        height: 4.2rem;
+        margin-right: 3rem;
+      }
+      @include respond(sm-phone) {
+        width: 2.2em;
+        height: 2.2em;
+        margin-right: 4rem;
+      }
     }
   }
 

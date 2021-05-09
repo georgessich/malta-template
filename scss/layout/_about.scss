@@ -9,8 +9,13 @@
         display: flex;
         padding-left: 10rem;
         padding-bottom: 15.3rem;
+
+        
         &-img {
             margin-right: 4rem;
+            @include respond (tab-port) {
+                display: none;
+            }
         }
 
         &-text {
@@ -18,6 +23,14 @@
             font-size: 1.7rem;
             font-weight: 500;
             max-width: 55.7rem;
+            @include respond (tab-port) {
+                font-size: 3rem;
+                margin: 0 auto;
+            }
+            @include respond (md-phone) {
+                font-size: 2.7rem;
+            }
+            
             p {
                 margin-bottom: 3rem;
             }

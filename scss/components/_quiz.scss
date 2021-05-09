@@ -11,17 +11,20 @@
     font-size: 1.4rem;
     color: #cce2f5;
     font-weight: 700;
+    @include respond(sm-phone) {
+        font-size: 3rem;
+     }
 }
 
-.choice-text {
-    
-}
 
 .choice__wrap {
     display: grid;
     grid-template-columns: 10rem 10rem;
     grid-row-gap: 4rem;
     grid-column-gap: 10rem;
+    @include respond(sm-phone) {
+        grid-column-gap: 20rem;
+     }
 }
 
 .choice-container {
@@ -36,6 +39,11 @@
     font-size: 1.2rem;
     text-align: center;
     margin-bottom: 2.2rem;
+    @include respond(sm-phone) {
+        width: 26rem;
+        height: 12rem;
+        font-size: 2.5rem;
+     }
 
     &:hover {
         cursor: pointer;
@@ -51,7 +59,7 @@
 
 
 #progressBar {
-    width: 560px;
+    width: 56rem;
     height: 6px;
     background-color: #CCE2F5;
     margin-top: 2rem;
@@ -71,6 +79,9 @@
     margin-left: 1.7rem;
     margin-bottom: 2.2rem;
     max-width: 44rem;
+    @include respond(sm-phone) {
+       font-size: 3rem;
+     }
 }
 
 .hud-btn {
@@ -78,10 +89,13 @@
     cursor: pointer;
     background-color: #2395fb;
     color: #ffffff;
-    padding: 17px 32px;
+    padding: 1.7rem 3.2rem;
     border: none;
     border-radius: 5px;
     margin-left: 25rem;
+    @include respond(sm-phone) {
+        font-size: 4rem;
+     }
     &:hover {
         transition: filter .5s;
         filter: brightness(1.1);
@@ -90,5 +104,9 @@
     &:active {
         transition: transform .2s;
         transform: translateY(2px);
+    }
+
+    @include respond (tab-port) {
+        margin-bottom: 10rem;
     }
 }

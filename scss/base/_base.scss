@@ -9,11 +9,28 @@
 html {
     box-sizing:border-box;
     font-size: 62.5%;
+    
+    @include respond(sm-desktop) {
+        font-size: 50.5%;
+    }
+    @include respond(tab-land) {
+        font-size: 40.5%;
+    }
+    @include respond(lg-phone-land) {
+        font-size: 30.5%;
+    }
 
+    @include respond(md-phone) {
+        font-size: 25.5%;
+    }
+    @include respond(sm-phone) {
+        font-size: 19.5%;
+    }
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
+    
 }
 
 button {
@@ -30,5 +47,5 @@ ul li {
 
 .container {
     width: 116rem;
-    margin: 0 auto;
+    margin: 0 auto; 
 }
