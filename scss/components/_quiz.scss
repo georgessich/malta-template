@@ -5,6 +5,7 @@
 
 .hud__quest {
     display: flex;
+    
 }
 
 .hud-prefix {
@@ -79,11 +80,16 @@
     margin-left: 1.7rem;
     margin-bottom: 2.2rem;
     max-width: 44rem;
+    height: 5rem;
     @include respond(sm-phone) {
        font-size: 3rem;
      }
 }
-
+.hud__buttons {
+    display: flex;
+    gap:3rem;
+    margin-left: 15rem;
+}
 .hud-btn {
 
     cursor: pointer;
@@ -92,7 +98,7 @@
     padding: 1.7rem 3.2rem;
     border: none;
     border-radius: 5px;
-    margin-left: 25rem;
+    
     @include respond(sm-phone) {
         font-size: 4rem;
      }
