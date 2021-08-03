@@ -116,3 +116,32 @@
         margin-bottom: 10rem;
     }
 }
+
+
+.quiz__finish {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-right: 19rem;
+    &-checkmark {
+        background-color: #00e900;
+        color: #ffffff;
+        border-radius: 50%;
+        align-self: center;
+        width: 26rem;
+        height: 26rem;
+        padding-left: 66px;
+        font-size: 17rem;
+
+    }
+
+    &-text {
+        font-size: 4rem;
+        margin-top: 2rem;
+    }
+}
+
+
+.hide {
+    display: none;
+}

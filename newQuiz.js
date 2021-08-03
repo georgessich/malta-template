@@ -4,6 +4,8 @@ const progressText = document.querySelector("#progressText");
 const progressBarFull = document.querySelector("#progressBarFull");
 const nextBtn = document.querySelector("#next");
 const prevBtn = document.querySelector("#prev");
+const quizWindow = document.querySelector('.quiz');
+const quizFinishWindow = document.querySelector('.quiz__finish');
 let currentQuestion = 0;
 let questionCounter = 0;
 let acceptingQuestions = true;
@@ -49,6 +51,7 @@ let questions = [
 const QUESTIONS_QUANTITY = questions.length;
 
 function questionHandler() {
+  quizFinishWindow.classList.add('hide');
   if (currentQuestion < QUESTIONS_QUANTITY) {
     questionText.textContent = questions[currentQuestion].question;
     progressText.innerText = `Вопрос ${
@@ -62,8 +65,9 @@ function questionHandler() {
       choice.textContent =
         questions[currentQuestion].choices["choice" + number];
     });
-  } else {
-      return;
+  } else if(currentQuestion === QUESTIONS_QUANTITY){
+      quizWindow.classList.add('hide');
+      quizFinishWindow.classList.remove('hide');
   }
 }
 
@@ -90,8 +94,3 @@ choices.forEach((choice) => {
 
 questionHandler();
 
-// quizHandler = () => {
-//     questionCounter = 0;
-//     availableQuestions = [...questions];
-//     getNewQuestion();
-// }
